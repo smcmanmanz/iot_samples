@@ -7,7 +7,7 @@ var Client = require('azure-iothub').Client;
 var async = require('async');
 
 
-var connectionString = 'HostName=SMC-IoTEdge-hub-1.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=RBY+jp112wSLizU/pQpaRxrp0rW2dex6E7FejPAQUzU=';
+var connectionString = '';
 var registry = Registry.fromConnectionString(connectionString);
 var client = Client.fromConnectionString(connectionString);
 var deviceToReboot = 'SYS-E102-9AP-L-002';
