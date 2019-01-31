@@ -9,11 +9,11 @@ var Registry = require('azure-iothub').Registry;
 const chalk = require('chalk');
 
 var connectionString = process.argv[2];
-var fwVersion = 'R 3.0.2';
-var fwPackageURI = 'https://www.supermicro.com/support/resources/getfile.php?SoftwareItemID=6908';
-var fwFileName = 'A2SAN8.C17.zip';
-var fwPackageCheckValue = '8fd83143e46cc84bc2d953657d29e206';
-var configId = 'firmware302';
+var fwVersion = '';
+var fwPackageURI = '';
+var fwFileName = '';
+var fwPackageCheckValue = '';
+var configId = '';
 
 // Receive the IoT Hub connection string as a command line parameter
 if (process.argv.length < 3) {
